@@ -123,7 +123,7 @@
   </div>
 
   <!-- 실링 왁스 이미지 -->
-  <img src="https://i.imgur.com/lxzPLbG.png" alt="실링 왁스" class="wax-seal">
+  <img src="https://cdn.pixabay.com/photo/2012/04/13/01/13/seal-31818_1280.png" class="wax-seal" alt="실링 왁스" />
 
   <!-- Unite 필기체 서명 -->
   <div class="signature">Unite</div>
