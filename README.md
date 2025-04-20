@@ -46,32 +46,43 @@
         <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 고블린 소굴 소탕" />
       </div>
 
-  <div>
+      <div>
         <label class="block text-lg font-semibold text-gray-800">난이도</label>
-        <textarea id="description" class="w-full h-28 p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="E~S"></textarea>
+        <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="E~S" />
+      </div>
+      <div>
+        <label class="block text-lg font-semibold text-gray-800">퀘스트 기간</label>
+        <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="E~S" />
       </div>
 
       <div>
-        <label class="block text-lg font-semibold text-gray-800">내용</label>
+        <label class="block text-lg font-semibold text-gray-800">반복 가능 여부</label>
+        <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="O / X" />
+      </div>
+      
+      <div>
+        <label class="block text-lg font-semibold text-gray-800">설명</label>
         <textarea id="description" class="w-full h-28 p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="의뢰 내용을 상세히 작성해주세요."></textarea>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
         <div>
-          <label class="block text-lg font-semibold text-gray-800">보상</label>
-          <input type="text" id="reward" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 300골드 + 명성 5" />
-        </div>
-        <div>
-          <label class="block text-lg font-semibold text-gray-800">유형</label>
+          <label class="block text-lg font-semibold text-gray-800">의뢰 유형</label>
           <input type="text" id="type" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 퇴치 / 호위 / 정찰" />
         </div>
       </div>
 
       <div>
-        <label class="block text-lg font-semibold text-gray-800">의뢰주</label>
-        <input type="text" id="client" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 농장주 브렌" />
+        <label class="block text-lg font-semibold text-gray-800">의뢰 조건</label>
+        <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="의뢰 성공 조건을 충분히 설명해주세요." />
       </div>
 
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-lg font-semibold text-gray-800">보상</label>
+          <input type="text" id="reward" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 동화 30닢 + 자유 스탯 5개" />
+        </div>
+        
       <div class="text-center mt-6">
         <button type="button" onclick="generateScroll()" class="bg-yellow-800 hover:bg-yellow-900 text-white py-2 px-6 rounded-xl text-lg shadow-lg">
           의뢰서 출력
@@ -83,10 +94,14 @@
     <div id="output" class="scroll-output mt-8 hidden border border-yellow-700 rounded-xl p-6 space-y-4 shadow-inner">
       <h2 class="text-2xl font-bold text-center"><span id="outTitle"></span></h2>
       <p><strong>난이도:</strong> <span id="outDesc"></span></p>
-      <p><strong>내용:</strong> <span id="outDesc"></span></p>
-      <p><strong>보상:</strong> <span id="outReward"></span></p>
+      <p><strong>퀘스트 기간:</strong> <span id="outDesc"></span></p>
+      <p><strong>반복 가능 여부:</strong> <span id="outDesc"></span></p>
+      <p><strong>설명:</strong> <span id="outDesc"></span></p>
+      <p><strong>의뢰 조건:</strong> <span id="outDesc"></span></p>
       <p><strong>유형:</strong> <span id="outType"></span></p>
-      <p><strong>의뢰주:</strong> <span id="outClient"></span></p>
+      <p><strong>보상:</strong> <span id="outReward"></span></p>
+      
+      
     </div>
   </div>
 
