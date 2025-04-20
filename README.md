@@ -69,7 +69,6 @@
         <div>
           <label class="block text-lg font-semibold text-gray-800">의뢰 유형</label>
           <input type="text" id="type" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 퇴치 / 호위 / 정찰" />
-        </div>
       </div>
 
       <div>
@@ -77,13 +76,12 @@
         <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="의뢰 성공 조건을 충분히 설명해주세요." />
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label class="block text-lg font-semibold text-gray-800">보상</label>
           <input type="text" id="reward" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 동화 30닢 + 자유 스탯 5개" />
         </div>
         
-      <div class="text-center mt-6">
+      <div>
         <button type="button" onclick="generateScroll()" class="bg-yellow-800 hover:bg-yellow-900 text-white py-2 px-6 rounded-xl text-lg shadow-lg">
           의뢰서 출력
         </button>
