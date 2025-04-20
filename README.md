@@ -76,8 +76,7 @@
 
     <!-- 결과 출력: 양피지 느낌 박스 -->
     <div id="output" class="scroll-output mt-8 hidden border border-yellow-700 rounded-xl p-6 space-y-4 shadow-inner">
-      <h2 class="text-2xl font-bold text-center">작성된 의뢰서</h2>
-      <p><strong>제목:</strong> <span id="outTitle"></span></p>
+      <h2 class="text-2xl font-bold text-center"><span id="outTitle"></span></p></h2>
       <p><strong>내용:</strong> <span id="outDesc"></span></p>
       <p><strong>보상:</strong> <span id="outReward"></span></p>
       <p><strong>유형:</strong> <span id="outType"></span></p>
