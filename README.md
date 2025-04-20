@@ -97,9 +97,7 @@
       <p><strong>설명:</strong> <span id="outDesc"></span></p>
       <p><strong>의뢰 조건:</strong> <span id="outDesc"></span></p>
       <p><strong>유형:</strong> <span id="outType"></span></p>
-      <p><strong>보상:</strong> <span id="outReward"></span></p>
-      
-      
+      <p><strong>보상:</strong> <span id="outReward"></span></p>   
     </div>
   </div>
 
