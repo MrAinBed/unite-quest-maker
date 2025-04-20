@@ -18,13 +18,16 @@
       background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
     }
     .scroll-output {
-      background-image: url('https://i.imgur.com/Gjv6UWr.png'); /* 고급 양피지 질감 이미지 */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: #3b2f1c;
-      font-family: 'Nanum Myeongjo', serif;
-    }
+  background-image: url('https://cdn.pixabay.com/photo/2017/01/31/13/14/paper-2025378_1280.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fdf6e3;
+  min-height: 300px;
+  color: #3b2f1c;
+  font-family: 'Nanum Myeongjo', serif;
+  border: 2px solid #d6b47d;
+}
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-6">
