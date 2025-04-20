@@ -2,7 +2,6 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>유나이트 길드 의뢰서</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -12,6 +11,7 @@
       font-weight: normal;
       font-style: normal;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
     body {
       background-color: #fef9f0;
@@ -23,13 +23,12 @@
       width: 600px;
       height: 850px;
       margin: auto;
-      background-image: url('/mnt/data/77e1226a-e82e-44fd-99d4-cfe133eda768.png');
+      background-image: url('/mnt/data/77e1226a-e82e-44fd-99d4-cfe133eda768.png'); /* 구겨진 양피지 배경 */
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
       padding: 50px;
       color: #2f1b0c;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
 
     .scroll-output .field {
@@ -42,7 +41,18 @@
     .reward { top: 300px; left: 100px; font-size: 16px; }
     .type { top: 330px; left: 100px; font-size: 16px; }
     .description { top: 370px; left: 100px; width: 400px; font-size: 16px; line-height: 1.5; }
-    .client { bottom: 90px; left: 50px; font-size: 18px; }
+    .client-box { bottom: 90px; left: 50px; font-size: 18px; display: flex; align-items: center; gap: 15px; }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 24px;
+      color: #5e1d10;
+    }
+
+    .seal {
+      width: 60px;
+      height: auto;
+    }
   </style>
 </head>
 <body class="p-6">
@@ -59,36 +69,4 @@
       <textarea id="description" class="w-full p-2 border rounded-md" placeholder="설명"></textarea>
       <input type="text" id="client" class="w-full p-2 border rounded-md" placeholder="의뢰주" />
 
-      <button type="button" onclick="generateScroll()" class="bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md">
-        의뢰서 출력
-      </button>
-    </form>
-  </div>
-
-  <!-- 출력 영역 -->
-  <div id="output" class="scroll-output hidden mt-10">
-    <div class="field title" id="outTitle"></div>
-    <div class="field subtitle" id="outSubtitle"></div>
-    <div class="field difficulty" id="outDifficulty"></div>
-    <div class="field type" id="outType"></div>
-    <div class="field reward" id="outReward"></div>
-    <div class="field description" id="outDescription"></div>
-    <div class="field client" id="outClient"></div>
-  </div>
-
-  <script>
-    function generateScroll() {
-      document.getElementById("outTitle").innerText = document.getElementById("title").value;
-      document.getElementById("outSubtitle").innerText = document.getElementById("subtitle").value;
-      document.getElementById("outDifficulty").innerText = document.getElementById("difficulty").value;
-      document.getElementById("outType").innerText = document.getElementById("type").value;
-      document.getElementById("outReward").innerText = document.getElementById("reward").value;
-      document.getElementById("outDescription").innerText = document.getElementById("description").value;
-      document.getElementById("outClient").innerText = document.getElementById("client").value;
-
-      document.getElementById("output").classList.remove("hidden");
-    }
-  </script>
-
-</body>
-</html>
+      <button type="button" onclick="generateScroll()" class="
