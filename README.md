@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -85,4 +86,13 @@
     function generateScroll() {
       document.getElementById("outTitle").innerText = document.getElementById("title").value;
       document.getElementById("outDesc").innerText = document.getElementById("description").value;
-      document.get
+      document.getElementById("outReward").innerText = document.getElementById("reward").value;
+      document.getElementById("outType").innerText = document.getElementById("type").value;
+      document.getElementById("outClient").innerText = document.getElementById("client").value;
+
+      document.getElementById("output").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
