@@ -46,6 +46,11 @@
         <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 고블린 소굴 소탕" />
       </div>
 
+  <div>
+        <label class="block text-lg font-semibold text-gray-800">난이도</label>
+        <textarea id="description" class="w-full h-28 p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="E~S"></textarea>
+      </div>
+
       <div>
         <label class="block text-lg font-semibold text-gray-800">내용</label>
         <textarea id="description" class="w-full h-28 p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="의뢰 내용을 상세히 작성해주세요."></textarea>
@@ -77,6 +82,7 @@
     <!-- 결과 출력: 양피지 느낌 박스 -->
     <div id="output" class="scroll-output mt-8 hidden border border-yellow-700 rounded-xl p-6 space-y-4 shadow-inner">
       <h2 class="text-2xl font-bold text-center"><span id="outTitle"></span></h2>
+      <p><strong>난이도:</strong> <span id="outDesc"></span></p>
       <p><strong>내용:</strong> <span id="outDesc"></span></p>
       <p><strong>보상:</strong> <span id="outReward"></span></p>
       <p><strong>유형:</strong> <span id="outType"></span></p>
