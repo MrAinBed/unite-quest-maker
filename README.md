@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -17,6 +16,14 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.15);
       background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
     }
+    .scroll-output {
+      background-image: url('https://i.imgur.com/Gjv6UWr.png'); /* 고급 양피지 질감 이미지 */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #3b2f1c;
+      font-family: 'Nanum Myeongjo', serif;
+    }
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-6">
@@ -27,32 +34,32 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Seal_red.svg/200px-Seal_red.svg.png" alt="유나이트 인장" class="w-16 opacity-80">
     </div>
 
-    <h1 class="text-3xl font-bold text-center text-yellow-900 mb-4">🛡️ 유나이트 길드 의뢰서</h1>
+    <h1 class="text-3xl font-bold text-center text-yellow-900 mb-4">유나이트 길드 의뢰서</h1>
 
     <form class="space-y-4">
       <div>
-        <label class="block text-lg font-semibold text-gray-800">📌 제목</label>
+        <label class="block text-lg font-semibold text-gray-800">제목</label>
         <input type="text" id="title" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 고블린 소굴 소탕" />
       </div>
 
       <div>
-        <label class="block text-lg font-semibold text-gray-800">📜 내용</label>
+        <label class="block text-lg font-semibold text-gray-800">내용</label>
         <textarea id="description" class="w-full h-28 p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="의뢰 내용을 상세히 작성해주세요."></textarea>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
-          <label class="block text-lg font-semibold text-gray-800">💰 보상</label>
+          <label class="block text-lg font-semibold text-gray-800">보상</label>
           <input type="text" id="reward" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 300골드 + 명성 5" />
         </div>
         <div>
-          <label class="block text-lg font-semibold text-gray-800">🧭 유형</label>
+          <label class="block text-lg font-semibold text-gray-800">유형</label>
           <input type="text" id="type" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 퇴치 / 호위 / 정찰" />
         </div>
       </div>
 
       <div>
-        <label class="block text-lg font-semibold text-gray-800">🧑‍💼 의뢰주</label>
+        <label class="block text-lg font-semibold text-gray-800">의뢰주</label>
         <input type="text" id="client" class="w-full p-2 rounded-md border border-yellow-300 bg-yellow-50" placeholder="예: 농장주 브렌" />
       </div>
 
@@ -63,14 +70,14 @@
       </div>
     </form>
 
-    <!-- 결과 영역 -->
-    <div id="output" class="mt-8 hidden bg-white/90 p-4 border border-yellow-300 rounded-lg space-y-2">
-      <h2 class="text-xl font-bold text-yellow-900 mb-2">📄 작성된 의뢰서</h2>
-      <p><strong>📌 제목:</strong> <span id="outTitle"></span></p>
-      <p><strong>📜 내용:</strong> <span id="outDesc"></span></p>
-      <p><strong>💰 보상:</strong> <span id="outReward"></span></p>
-      <p><strong>🧭 유형:</strong> <span id="outType"></span></p>
-      <p><strong>🧑‍💼 의뢰주:</strong> <span id="outClient"></span></p>
+    <!-- 결과 출력: 양피지 느낌 박스 -->
+    <div id="output" class="scroll-output mt-8 hidden border border-yellow-700 rounded-xl p-6 space-y-4 shadow-inner">
+      <h2 class="text-2xl font-bold text-center">작성된 의뢰서</h2>
+      <p><strong>제목:</strong> <span id="outTitle"></span></p>
+      <p><strong>내용:</strong> <span id="outDesc"></span></p>
+      <p><strong>보상:</strong> <span id="outReward"></span></p>
+      <p><strong>유형:</strong> <span id="outType"></span></p>
+      <p><strong>의뢰주:</strong> <span id="outClient"></span></p>
     </div>
   </div>
 
@@ -78,13 +85,4 @@
     function generateScroll() {
       document.getElementById("outTitle").innerText = document.getElementById("title").value;
       document.getElementById("outDesc").innerText = document.getElementById("description").value;
-      document.getElementById("outReward").innerText = document.getElementById("reward").value;
-      document.getElementById("outType").innerText = document.getElementById("type").value;
-      document.getElementById("outClient").innerText = document.getElementById("client").value;
-
-      document.getElementById("output").classList.remove("hidden");
-    }
-  </script>
-
-</body>
-</html>
+      document.get
