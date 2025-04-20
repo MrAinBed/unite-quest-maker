@@ -108,25 +108,27 @@
       </div>
     </form>
 
-    <!-- 출력 결과 -->
-    <div id="output" class="scroll-output mt-8 hidden border border-yellow-700 rounded-xl p-6 space-y-4 shadow-inner">
-      <h2 class="text-2xl font-bold text-center"><span id="outTitle"></span></h2>
-      <p><strong>난이도:</strong> <span id="outDifficulty"></span></p>
-      <p><strong>퀘스트 기간:</strong> <span id="outDuration"></span></p>
-      <p><strong>반복 가능 여부:</strong> <span id="outRepeatable"></span></p>
-      <p><strong>설명:</strong> <span id="outDescription"></span></p>
-      <p><strong>의뢰 조건:</strong> <span id="outCondition"></span></p>
-      <p><strong>의뢰 유형:</strong> <span id="outType"></span></p>
-      <p><strong>보상:</strong> <span id="outReward"></span></p>
-      <p><strong>의뢰주:</strong> <span id="outClient"></span></p>
-
-      <!-- 실링 왁스 이미지 -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Seal_wax_red.svg/120px-Seal_wax_red.svg.png" alt="실링 왁스" class="wax-seal"/>
-
-      <!-- Unite 필기체 -->
-      <div class="signature">Unite</div>
-    </div>
+  <!-- 출력 결과 -->
+<div id="output" class="scroll-output mt-8 hidden relative rounded-xl shadow-inner text-center px-10 py-12">
+  <div class="space-y-3">
+    <h2 class="text-2xl font-bold"><span id="outTitle"></span></h2>
+    <p><strong>난이도:</strong> <span id="outDifficulty"></span></p>
+    <p><strong>퀘스트 기간:</strong> <span id="outDuration"></span></p>
+    <p><strong>반복 가능 여부:</strong> <span id="outRepeatable"></span></p>
+    <p><strong>설명:</strong> <span id="outDescription"></span></p>
+    <p><strong>의뢰 조건:</strong> <span id="outCondition"></span></p>
+    <p><strong>의뢰 유형:</strong> <span id="outType"></span></p>
+    <p><strong>보상:</strong> <span id="outReward"></span></p>
+    <p><strong>의뢰주:</strong> <span id="outClient"></span></p>
   </div>
+
+  <!-- 실링 왁스 이미지 -->
+  <img src="https://i.imgur.com/lxzPLbG.png" alt="실링 왁스" class="wax-seal">
+
+  <!-- Unite 필기체 서명 -->
+  <div class="signature">Unite</div>
+</div>
+
 
   <script>
     function generateScroll() {
