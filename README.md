@@ -8,7 +8,7 @@
   <style>
     body {
       background-color: #fef9f0;
-      background-image: url('https://cdn.pixabay.com/photo/2017/01/31/13/14/paper-2025378_1280.png');
+      background-image: url('https://www.transparenttextures.com/patterns/paper.png');
       font-family: 'Nanum Myeongjo', serif;
     }
     .parchment {
