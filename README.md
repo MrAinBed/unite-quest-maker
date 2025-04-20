@@ -8,7 +8,7 @@
   <style>
     body {
       background-color: #fef9f0;
-      background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+      background-image: url('https://via.placeholder.com/600x400?text=양피지');
       font-family: 'Nanum Myeongjo', serif;
     }
     .parchment {
