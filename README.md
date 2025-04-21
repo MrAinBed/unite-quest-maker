@@ -69,4 +69,7 @@
       <textarea id="description" class="w-full p-2 border rounded-md" placeholder="설명"></textarea>
       <input type="text" id="client" class="w-full p-2 border rounded-md" placeholder="의뢰주" />
 
-      <button type="button" onclick="generateScroll()" class="
+      <button type="button" onclick="generateScroll()" class="bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md">
+  의뢰서 출력
+</button>
+
