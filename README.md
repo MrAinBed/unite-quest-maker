@@ -23,8 +23,8 @@
       width: 600px;
       height: 850px;
       margin: auto;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/37/Old_paper_texture_03.jpg'); /* 구겨진 양피지 */
-      background-size: contain;
+      background-image: url('https://i.imgur.com/gjqVZsY.png'); /* 새 배경 이미지 적용 */
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       padding: 50px;
