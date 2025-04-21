@@ -23,7 +23,7 @@
       width: 600px;
       height: 850px;
       margin: auto;
-      background-image: url('https://i.imgur.com/gjqVZsY.png'); /* 새 배경 이미지 적용 */
+      background-image: url('https://imgur.com/a/JjijrTq.jpeg'); /* 새 배경 이미지 적용 */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
