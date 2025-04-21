@@ -23,7 +23,7 @@
       width: 600px;
       height: 850px;
       margin: auto;
-      background-image: url('/mnt/data/77e1226a-e82e-44fd-99d4-cfe133eda768.png'); /* 구겨진 양피지 배경 */
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/37/Old_paper_texture_03.jpg'); /* 구겨진 양피지 */
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -41,7 +41,13 @@
     .reward { top: 300px; left: 100px; font-size: 16px; }
     .type { top: 330px; left: 100px; font-size: 16px; }
     .description { top: 370px; left: 100px; width: 400px; font-size: 16px; line-height: 1.5; }
-    .client-box { bottom: 90px; left: 50px; font-size: 18px; display: flex; align-items: center; gap: 15px; }
+    .client-box {
+      bottom: 90px; left: 50px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
 
     .signature {
       font-family: 'Great Vibes', cursive;
@@ -69,7 +75,48 @@
       <textarea id="description" class="w-full p-2 border rounded-md" placeholder="설명"></textarea>
       <input type="text" id="client" class="w-full p-2 border rounded-md" placeholder="의뢰주" />
 
-      <button type="button" onclick="generateScroll()" class="bg-yellow-700 hover:bg-yellow-800 text-white px-4 py-2 rounded-md">
-  의뢰서 출력
-</button>
+      <button type="button" onclick="generateScroll()" class="w-full bg-yellow-800 hover:bg-yellow-900 text-white font-semibold py-2 rounded-md">
+        의뢰서 출력
+      </button>
+    </form>
+  </div>
 
+  <script>
+    function generateScroll() {
+      const title = document.getElementById('title').value;
+      const subtitle = document.getElementById('subtitle').value;
+      const difficulty = document.getElementById('difficulty').value;
+      const reward = document.getElementById('reward').value;
+      const type = document.getElementById('type').value;
+      const description = document.getElementById('description').value;
+      const client = document.getElementById('client').value;
+
+      const scroll = document.createElement('div');
+      scroll.className = 'scroll-output';
+
+      scroll.innerHTML = `
+        <div class="field title">${title}</div>
+        <div class="field subtitle">${subtitle}</div>
+        <div class="field difficulty">${difficulty}</div>
+        <div class="field reward">${reward}</div>
+        <div class="field type">${type}</div>
+        <div class="field description">${description}</div>
+        <div class="field client-box">
+          <span class="signature">${client}</span>
+          <span class="signature">Unite</span>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Wax_Seal_Red.png" class="seal" />
+        </div>
+      `;
+
+      const existing = document.getElementById('scroll-container');
+      if (existing) existing.remove();
+
+      const container = document.createElement('div');
+      container.id = 'scroll-container';
+      container.className = 'mt-10 flex justify-center';
+      container.appendChild(scroll);
+      document.body.appendChild(container);
+    }
+  </script>
+</body>
+</html>
